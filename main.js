@@ -1,9 +1,13 @@
-function hello(callback) {
-  console.log(callback);
-  console.log("hello " + callback());
+const btn = document.querySelector("#btn");
+const h1 = document.querySelector("h1");
+
+function hello() {
+  btn.style.color = "blue";
 }
 
+function bgColor() {
+  h1.style.backgroundColor = "red";
+}
 
-hello(function () {
-  return "sho";
-});
+btn.addEventListener("click", hello);
+btn.addEventListener("click", bgColor);
