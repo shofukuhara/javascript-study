@@ -1,13 +1,11 @@
-const btn = document.querySelector("#btn");
-const h1 = document.querySelector("h1");
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.querySelector(".animate-title");
+  const str = el.innerHTML.trim();
+  let concatStr = "";
 
-function hello() {
-  btn.style.color = "blue";
-}
+  for (let c of str) {
+    concatStr += `<span class="char">${c}</span>`;
+  }
 
-function bgColor() {
-  h1.style.backgroundColor = "red";
-}
-
-btn.addEventListener("click", hello);
-btn.addEventListener("click", bgColor);
+  console.log((el.innerHTML = concatStr));
+});
