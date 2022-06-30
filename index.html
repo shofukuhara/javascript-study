@@ -2,22 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <div class="animate-title inview">
-            PLAY ANIMATION
-        </div>
-        <button onclick="document.querySelector('.animate-title').classList.toggle('inview');">Animation</button>
-    </div>
-    <script src="main.js"></script>
+  <div class="box">
+    <div class="circle"></div>
+    <button class="btn">circle</button>
+  </div>
+  <div class="box">
+    <ul class="list">
+      <li class="list__item">リスト</li>
+      <li class="list__item">リスト</li>
+    </ul>
+    <button class="listbtn">リスト</button>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
