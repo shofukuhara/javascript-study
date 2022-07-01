@@ -5,6 +5,51 @@ body {
   width: 600px;
 }
 
+.header__hamburger {
+  position: fixed;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  right: 100px;
+  top: 100px;
+}
+
+.header__hamburger-line:nth-child(1) {
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.header__hamburger-line:nth-child(2) {
+  position: absolute;
+  top: 48px;
+  left: 10px;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.header__hamburger-line:nth-child(3) {
+  position: absolute;
+  top: 68px;
+  left: 10px;
+  width: 80px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.header__hamburger .active .header__hamburger-line:nth-child(1) {
+  top:26px;transform:rotate(-45deg)
+}
+
+
+.header__hamburger .header__hamburger-line:nth-child(2) .active,
+.header__hamburger .header__hamburger-line:nth-child(3) .active {
+  top:26px;transform:rotate(45deg)
+}
+
+
 .circle {
   width: 200px;
   height: 200px;

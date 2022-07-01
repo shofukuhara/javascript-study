@@ -14,3 +14,13 @@ listBtn.addEventListener("click", function () {
   li.innerHTML = "リスト";
   list.appendChild(li);
 });
+
+const hamburger = document.querySelector(".header__hamburger");
+// const hamburgerline = document.querySelector(".header__hamburger-line");
+const hamburgerlist = document.querySelector(".header__list");
+
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("acitve");
+  hamburgerlist.classList.toggle("acitve");
+  console.log(hamburger);
+});
