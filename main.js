@@ -1,26 +1,10 @@
-const element = document.querySelector(".circle");
-const circleBtn = document.querySelector(".btn");
+const btn = document.querySelector(".btn");
+const text = document.querySelector(".input");
+const list = document.querySelector(".list");
 
-circleBtn.addEventListener("click", function () {
-  element.classList.toggle("circle_2");
-});
-
-let list = document.querySelector(".list");
-const item = document.querySelector(".list__item");
-const listBtn = document.querySelector(".listbtn");
-
-listBtn.addEventListener("click", function () {
+btn.addEventListener("click", function () {
+  const value = text.value;
   let li = document.createElement("li");
-  li.innerHTML = "リスト";
+  li.innerHTML = value;
   list.appendChild(li);
-});
-
-const hamburger = document.querySelector(".header__hamburger");
-// const hamburgerline = document.querySelector(".header__hamburger-line");
-const hamburgerlist = document.querySelector(".header__list");
-
-hamburger.addEventListener("click", function () {
-  hamburger.classList.toggle("acitve");
-  hamburgerlist.classList.toggle("acitve");
-  console.log(hamburger);
 });

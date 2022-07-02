@@ -7,21 +7,9 @@ html(lang="ja")
     link(rel="stylesheet", href="style.css")
     title Document
   body
-    header.header
-      .header__hamburger
-        span.header__hamburger-line
-        span.header__hamburger-line
-        span.header__hamburger-line
-      ul.header__list
-        li.header__list-item リスト
-        li.header__list-item リスト
-        li.header__list-item リスト
+    h1.title ToDoリスト
     .box
-      .circle
-      button.btn circle
-    .box
-      ul.list
-        li.list__item リスト
-        li.list__item リスト
-      button.listbtn リスト
+      input(type="text" class="input")
+      button.btn add
+    ul.list
     script(src="main.js")
