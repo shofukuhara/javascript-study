@@ -1,10 +1,6 @@
-const btn = document.querySelector(".btn");
-const text = document.querySelector(".input");
-const list = document.querySelector(".list");
-
-btn.addEventListener("click", function () {
-  const value = text.value;
-  let li = document.createElement("li");
-  li.innerHTML = value;
-  list.appendChild(li);
+const box = document.querySelector(".box");
+window.addEventListener("scroll", function () {
+  if (this.scrollY > 200) {
+    box.classList.add("active");
+  }
 });

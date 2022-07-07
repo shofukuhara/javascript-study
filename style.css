@@ -2,20 +2,20 @@ body {
   background-color: aliceblue;
   width: 600px;
   margin: 0 auto;
+  height: 3000px  ;
 }
 
-.input {
-  width: 200px;
-  height: 30px;
+.box {
+  width: 300px;
+  height: 300px;
+  margin-top: 600px;
+  background-color: blue;
+  /* opacity: 0; */
+  transition: 0.5s;
 }
 
-ul {
-  padding-left: 12px;
-}
-
-.btn {
-  width: 60px;
-  height: 35px;
-  cursor: pointer;
-  font-size: 16px;
+.box.active {
+  /* opacity: 1; */
+  background-color: brown;
+  transition: 0.5s;
 }
