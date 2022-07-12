@@ -1,6 +1,9 @@
-const box = document.querySelector(".box");
-window.addEventListener("scroll", function () {
-  if (this.scrollY > 200) {
-    box.classList.add("active");
+let num = 0;
+let tar = 200;
+
+setInterval(function () {
+  if (num <= tar) {
+    document.querySelector(".number").innerText = num;
+    num++;
   }
-});
+}, 20);
