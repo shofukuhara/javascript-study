@@ -1,19 +1,14 @@
-// window.addEventListener("scroll", function () {
-//   if (this.scrollY < 600) {
-//     let num = 0;
-//     let tar = 200;
-//     setInterval(function () {
-//       if (num <= tar) {
-//         document.querySelector(".number").innerText = num;
-//         num++;
-//       }
-//     }, 20);
-//   }
-// });
-const bg = document.querySelector(".bgappearTrigger");
-bg.style.removeProperty("color");
+let els = document.querySelectorAll(".js-fadeIn");
 
-// const bg = getComputedStyle(document.querySelector(".bgappearTrigger"),"::before").top;
+els.forEach(function (fadeIn) {
+  let windowHeight = window.innerHeight;
 
-// console.log(bg);
-window.addEventListener("scroll", function () {});
+  window.addEventListener("scroll", function () {
+    let offset = fadeIn.getBoundingClientRect().top;
+    let scroll = window.scrollY;
+
+    if (scroll > offset - windowHeight + 250) {
+      fadeIn.classList.add("is-scrollIn");
+    }
+  });
+});
