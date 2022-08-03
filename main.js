@@ -1,14 +1,18 @@
-let els = document.querySelectorAll(".js-fadeIn");
+const images = [
+  "images/image000.jpg",
+  "images/image001.jpg",
+  "images/image002.jpg",
+  "images/image003.jpg",
+];
 
-els.forEach(function (fadeIn) {
-  let windowHeight = window.innerHeight;
+let currentIndex = 0;
 
-  window.addEventListener("scroll", function () {
-    let offset = fadeIn.getBoundingClientRect().top;
-    let scroll = window.scrollY;
+const mainImage = document.getElementById("carousel__main");
 
-    if (scroll > offset - windowHeight + 250) {
-      fadeIn.classList.add("is-scrollIn");
-    }
-  });
-});
+mainImage.src = images[currentIndex];
+
+console.log(mainImage.src);
+
+for (let i of images) {
+  console.log(i);
+}

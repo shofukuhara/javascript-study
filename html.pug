@@ -7,10 +7,12 @@ html(lang="ja")
     link(rel="stylesheet", href="style.css")
     title Document
   body
-    .box
-      .contents
-        .content.js-fadeIn
-          p フェードイン
-        .content.js-fadeIn
-          p フェードイン
+    section#carousel.carousel
+      .carousel__main
+        img#carousel__main
+      #carousel__prev.carousel__prev
+        span.line
+      #carousel__next.carousel__next
+        span.line
+      ul.carousel__thumbnails
     script(src="main.js")
